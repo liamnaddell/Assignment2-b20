@@ -1,8 +1,8 @@
 def strip_nu(s: str) -> str:
     newstr = ""
-    if s.islower():
+    if s.islower() and s.isalpha():
         return s.upper()
-    elif s.isupper():
+    elif s.isupper() and s.isalpha():
         return s.lower()
     else:
         for c in s:

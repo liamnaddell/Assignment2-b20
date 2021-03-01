@@ -1,2 +1,2 @@
 all:
-	env FLASK_APP=Question1_Flask.py flask run --host=localhost
+	env FLASK_APP=Question1.py flask run --host=localhost

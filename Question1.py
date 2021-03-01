@@ -7,6 +7,6 @@ def default():
     return "Welcome to my CSCB20 Website!"
 
 @app.route("/<x>")
-def hello(x):
+def generateResponse(x):
     y = strip_nu(x)
     return "Welcome, {z}, to my CSCB20 Website!".format(z=y)
