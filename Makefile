@@ -1,2 +1,2 @@
 all:
-	python3 main.py
+	env FLASK_APP=main.py flask run --host=localhost
