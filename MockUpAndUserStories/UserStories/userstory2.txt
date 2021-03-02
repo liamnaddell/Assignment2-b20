@@ -1,0 +1,2 @@
+As a student user, the student should have access to the course syllabus as a seperate pdf, which should be located near
+the about section
