@@ -1,5 +1,6 @@
 def strip_nu(s: str) -> str:
     newstr = ""
+    #what about special characters??
     if s.islower() and s.isalpha():
         return s.upper()
     elif s.isupper() and s.isalpha():
