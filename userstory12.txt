@@ -1,0 +1,1 @@
+A user should see the course code on the main page
