@@ -1,8 +1,5 @@
-<html>
-    <head>
-        <meta charset="UTF-8"> 
-    </head>
-    <body>
+{% extends "src/base.html" %}
+{% block content %}
         <h1>Assignments</h1>
         <h3>Assginment 1</h3>
         <p>Handout: <a href='../templates/dummy.pdf'>A1.pdf</a></p>
@@ -24,5 +21,4 @@
         <p>Topics: Authentication via Password over HTTP</p>
 
         <p>Solution: <a href='../templates/dummy.pdf'>A3s.pdf</a></p>
-    </body>
-</html>
+{% endblock %}
