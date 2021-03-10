@@ -2,62 +2,62 @@
 <html>
     <head>
         <meta charset="utf-8"> 
-		<meta name="viewpoint" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
-		<title>CSCB63 Website</title>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+        <title>CSCB63 Website</title>
+    </head>
+    <body style="background-color: rgb(76, 179, 110);">
+        <div class="course_title">
+            <h1 style="text-align: center;">CSCB63 -- Design and Analysis of Data Structures</h1>
+        </div>
 
-        <body style="background-color: rgb(76, 179, 110);">
-            <div class="course_title">
-                <h1 style="text-align: center;">CSCB63 -- Design and Analysis of Data Structures</h1>
+        
+        <div class="index_rows">
+            <div class="side_bar">
+                <ul id="buttons">
+                    <li><a href="index.html"></i><h4>Home</h4></a></li>
+                    <li><a href="dummy.pdf"><h4>Syllabus</h4></a></li>
+                    <li><a href="csc.html"><h4>Course Schedule</h4></a></li>
+                    <li><a href="faq.html"><h4>FAQ</h4></a></li>
+                    <li><a href="oldtests.html"><h4>Tests</h4></a></li>
+                    <li><a href="assignments.html"><h4>Assignments</h4></a></li>
+
+                    <div class="drop_down_menu">
+                        <li><button class="drop_button"><b>External Sites</b></button></li>
+                        <div class="drop_down_items">
+                            <a href="https://www.piazza.com/"><b>Piazza</b></a>
+                            <a href="https://markus.utsc.utoronto.ca/"><b>Markus</b></a>
+                            <a href="https://google.com"><b>Calender</b></a>
+                            <a href="https://www.q.utoronto.ca/"><b>Quercus</b></a>
+                            <a href="https://www.wolframalpha.com/"><b>Wolfram Alpha</b></a>
+                        </div>
+                    </div>
+                    
+                </ul>
+
             </div>
 
-            
-            <div class="index_rows">
-                <div class="side_bar">
-                    <ul id="buttons">
-                        <li><a href="index.html"></i><h4>Home</h4></a></li>
-                        <li><a href="syllabus.pdf"><h4>Syllabus</h4></a></li>
-                        <li><a href="Course_Schedule.html"><h4>Course Schedule</h4></a></li>
-                        <li><a href="Calender.html"><h4>Calender</h4></a></li>
-                        <li><a href="faq.html"><h4>FAQ</h4></a></li>
-                        <li><a href="oldtests.html"><h4>Resources</h4></a></li>
+        {% block content %}
+            <div class="content">
+                <h2>Course Description</h2>
+                <p>
+                    Design, analysis, implementation and comparison of efficient data structures for common abstract data types. 
+                    Priority queues: heaps and mergeable heaps. Dictionaries: balanced binary search trees, B-trees, hashing. 
+                    Amortization: data structures for managing dynamic tables and disjoint sets. Data structures for representing 
+                    graphs. Graph searches.<br><br>
+                <b>Exclusion </b>descriptiodescriptio<br>
+                <b>Prerequisites </b>descriptiodescriptio<br>
+                </p>
 
-                        <div class="drop_down_menu">
-                            <li><button class="drop_button"><b>External Sites</b></button></li>
-                            <div class="drop_down_items">
-                                <a href="http://www.piazza.com/"><b>Piazza</b></a>
-                                <a href="http://markus.utsc.utoronto.ca/"><b>Markus</b></a>
-                                <a href="http://www.q.utoronto.ca/"><b>Quercus</b></a>
-                                <a href="https://www.wolframalpha.com/"><b>Wolfram Alpha</b></a>
-                            </div>
-                        </div>
-                        
-                    </ul>
+                <h2>Instructor Information</h2>
+                <p>Dr. Anna Bretscher</p>
 
-                </div>
-
-                <div class="content">
-                    <h2>Course Description</h2>
-                    <p>
-                        Design, analysis, implementation and comparison of efficient data structures for common abstract data types. 
-                        Priority queues: heaps and mergeable heaps. Dictionaries: balanced binary search trees, B-trees, hashing. 
-                        Amortization: data structures for managing dynamic tables and disjoint sets. Data structures for representing 
-                        graphs. Graph searches.<br><br>
-                    <b>Exclusion </b>descriptiodescriptio<br>
-                    <b>Prerequisites </b>descriptiodescriptio<br>
-                    </p>
-
-                    <h2>Instructor Information</h2>
-                    <p>Dr. Anna Bretscher</p>
-
-                   
-                </div>
-            
+                
             </div>
         
+        </div>
+        {% endblock %}
+    
 
-        </body>
-
-
-    </head>
+    </body>
 </html>
