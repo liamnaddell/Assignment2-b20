@@ -10,6 +10,7 @@ p {
 .index_rows {
   display: flex;
   height: 100%;
+  width:fit-content;
   flex-direction: row;
   justify-content: flex-start;
 }

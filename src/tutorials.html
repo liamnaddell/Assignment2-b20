@@ -1,8 +1,10 @@
 {% extends "index.html" %}
 {% block content %}
+
+        <div style="align-self: flex-start;">
         <h1>Tutorials!!</h1>
 
-<h3>Week 1</h3>
+        <h3>Week 1</h3>
         <pre>Tutorial Worksheet:    <a href="{{ url_for('static', filename='dummy.pdf') }}">wskn.pdf</a></pre>
         <pre>Solutions:             <a href="{{ url_for('static', filename='dummy.pdf') }}">soln.pdf</a>soln.pdf</pre>
         <h3>Week 2</h3>
@@ -32,4 +34,5 @@
         <h3>Week 10</h3>
         <pre>Tutorial Worksheet:    <a href="{{ url_for('static', filename='dummy.pdf') }}">wskn.pdf</a></pre>
         <pre>Solutions:             <a href="{{ url_for('static', filename='dummy.pdf') }}">soln.pdf</a></pre>
+        </div>
 {% endblock %}

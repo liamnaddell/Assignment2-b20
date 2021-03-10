@@ -1,6 +1,8 @@
 {% extends "index.html" %}
 <a href="{{ url_for('static', filename='dummy.pdf') }}">Syllabus</a><
 {% block content %}
+
+        <div style="align-self: flex-start;">
         <h1>Assignments</h1>
         <h3>Assginment 1</h3>
         <p>Handout: <a href='{{ url_for('static', filename='dummy.pdf') }}'>A1.pdf</a></p>
@@ -22,4 +24,5 @@
         <p>Topics: Authentication via Password over HTTP</p>
 
         <p>Solution: <a href='{{ url_for('static', filename='dummy.pdf') }}'>A3s.pdf</a></p>
+        </div>
 {% endblock %}

@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 {% block content %}
+        <div style="align-self: flex-start;">
         <h1>Course Schedule</h1>
-
         <h3>Week 1</h3>
         <pre>Topic:        Introduction to downloading Sqlite</pre>
         <pre>Reading:      http://www.sqlite.org</pre>
@@ -42,6 +42,7 @@
         <pre>Topic:        Final exam that has nothing to do with the course material</pre>
         <pre>Reading:      Literally an entire seperate class of topics</pre>
         <pre>Lec Material: <a href="{{ url_for('static', filename='dummy.pdf') }}">LECn.pdf</a></pre>
+        </div>
     </body>
 </html>
 {% endblock %}
