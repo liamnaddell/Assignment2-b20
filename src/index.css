@@ -1,5 +1,5 @@
 /* Fonts and sizes */
-p {
+p span {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-style: italic;
@@ -93,4 +93,14 @@ p {
 
 .drop_down_menu:hover .drop_button {
     background-color: #3e8e41;
-  }
+}
+
+body {
+    margin: 0;
+}
+
+footer { 
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
