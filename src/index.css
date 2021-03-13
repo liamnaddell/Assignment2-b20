@@ -20,7 +20,7 @@ a:hover {
 .course_title {
     text-align: center;
     display: block;
-    align-self flex-start;
+    align-self: flex-start;
 }
 
 #bar_and_content {
