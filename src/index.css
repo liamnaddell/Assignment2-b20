@@ -27,6 +27,11 @@ a:hover {
     display: flex;
     flex-direction: row;
 }
+
+.content_class {
+  align-self: flex-start;
+}
+
 /* Home Page flex box division */
 #index_rows {
   /*height: 100%;*/
